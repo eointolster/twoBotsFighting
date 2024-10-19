@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot Fight Simulation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div id="gameInfo">
+        <span id="generationDisplay">Generation: 0</span>
+        <span id="blueScoreDisplay">Blue Score: 0</span>
+        <span id="redScoreDisplay">Red Score: 0</span>
+        <span id="blueLivesDisplay">Blue Lives: 3</span>
+        <span id="redLivesDisplay">Red Lives: 3</span>
+    </div>
+    <div id="gameContainer">
+        <canvas id="blueNeuralNet" width="400" height="600"></canvas>
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <canvas id="redNeuralNet" width="400" height="600"></canvas>
+    </div>
+    <button id="toggleButton" onclick="toggleSimulation()">Pause Simulation</button>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

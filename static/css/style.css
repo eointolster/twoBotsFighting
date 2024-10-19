@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+#gameInfo {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+#gameInfo span {
+    margin-right: 20px;
+}
+
+#gameContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gameCanvas {
+    border: 1px solid #000;
+    margin: 0 10px;
+}
+
+.neuralNetContainer {
+    width: 180px;
+    height: 250px;
+    margin: 0 5px;
+    border: 1px solid #000;
+    background-color: #f0f0f0;
+}
+
+#blueNeuralNet, #redNeuralNet {
+    width: 400px;
+    height: 600px;
+    border: 1px solid #000;
+}
+
+#toggleButton {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
